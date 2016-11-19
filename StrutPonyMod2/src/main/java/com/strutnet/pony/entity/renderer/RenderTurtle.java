@@ -11,7 +11,7 @@ import com.strutnet.pony.entity.EntityTurtle;
 
 public class RenderTurtle extends RenderLiving
 {
-	private static final ResourceLocation turtleTextures = new ResourceLocation(Reference.MODID,"/textures/entity/turtle/turtle.png");
+	private static final ResourceLocation turtleTextures = new ResourceLocation(Reference.MODID,"textures/entity/turtle/turtle.png");
 	
 	public RenderTurtle(RenderManager rendermanager, ModelBase model, float shadowsize)
 	{

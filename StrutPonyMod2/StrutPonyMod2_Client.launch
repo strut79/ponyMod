@@ -10,5 +10,4 @@
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="GradleStart"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="StrutPonyMod2"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DFORGE_FORCE_FRAME_RECALC=true"/>
-<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/Users/wendellfarley/Documents/GameStuff/Minecraft/StrutPonyMod2/run"/>
 </launchConfiguration>
