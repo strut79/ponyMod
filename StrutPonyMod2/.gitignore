@@ -1,2 +1,11 @@
 /bin/
 /build/
+/config/
+/logs/
+/mods/
+/resourcepacks/
+/saves/
+/options.txt
+/usercache.json
+/usernamecache.json
+/.gradle/
