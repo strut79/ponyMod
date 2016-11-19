@@ -1,0 +1,16 @@
+[
+{
+  "modid": "strutpony",
+  "name": "StrutNet Pony mod",
+  "description": "StrutNet Pony mod.",
+  "version": "1.0",
+  "mcversion": "1.10.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Strut 79"],
+  "credits": "Anna Beerley for the motivation",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
