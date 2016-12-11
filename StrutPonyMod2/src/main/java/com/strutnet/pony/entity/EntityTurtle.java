@@ -2,6 +2,7 @@ package com.strutnet.pony.entity;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.MoverType;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAIMate;
@@ -161,7 +162,7 @@ public class EntityTurtle extends EntityAnimal
     	if(this.isInWater())
     	{
 //    		this.moveFlying(x, z, 0.1F);
-    		this.moveEntity(this.motionX, this.motionY, this.motionZ);
+    		this.moveEntity(MoverType.SELF,this.motionX, this.motionY, this.motionZ);
     		this.motionX *= 0.8D;
     		this.motionY *= 0.8D;
     		this.motionZ *= 0.8D;

@@ -7,20 +7,21 @@ import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Biomes;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 
+import com.strutnet.pony.Reference;
 import com.strutnet.pony.StrutPonyMod;
 import com.strutnet.pony.entity.renderer.RenderPony;
 import com.strutnet.pony.entity.renderer.RenderTurtle;
 import com.strutnet.pony.model.ModelTurtle;
 
 public class PonyEntityFactory {
-	private static EntityTurtle turtle;
 	private static int turtleEntityID = 255;
 	private static int ponyID = 254;
-
+	
 	public static void init() {
 
 	}
@@ -29,13 +30,13 @@ public class PonyEntityFactory {
 
 		System.out.println(">>>>>>>>>>>>>>>> entity register");
 		EntityRegistry
-				.registerModEntity(EntityTurtle.class, "Turtle", turtleEntityID, StrutPonyMod.INSTANCE, 64, 1, true);
+				.registerModEntity(new ResourceLocation(Reference.MODID, "Turtle"),EntityTurtle.class, "Turtle", turtleEntityID, StrutPonyMod.INSTANCE, 64, 1, true);
 		EntitySpawnPlacementRegistry.setPlacementType(EntityTurtle.class, EntityLiving.SpawnPlacementType.ON_GROUND);
 		EntityRegistry.addSpawn(EntityTurtle.class, 8, 1, 4, EnumCreatureType.CREATURE, Biomes.BEACH, Biomes.RIVER,
 				Biomes.SWAMPLAND, Biomes.FOREST);
 		
 		EntityRegistry
-			.registerModEntity(EntityPony.class, "Pony", ponyID, StrutPonyMod.INSTANCE, 64, 1, true);
+			.registerModEntity(new ResourceLocation(Reference.MODID, "Pony"),EntityPony.class, "Pony", ponyID, StrutPonyMod.INSTANCE, 64, 1, true);
 		EntitySpawnPlacementRegistry.setPlacementType(EntityPony.class, EntityLiving.SpawnPlacementType.ON_GROUND);
 		EntityRegistry.addSpawn(EntityPony.class, 8, 1, 4, EnumCreatureType.CREATURE, Biomes.DEFAULT);
 		
